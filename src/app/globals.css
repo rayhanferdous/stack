@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply font-inter;
+  }
+  .main-container {
+    @apply px-4 w-full 2xl:min-w-[1375px] 2xl:mx-auto;
+  }
+}
