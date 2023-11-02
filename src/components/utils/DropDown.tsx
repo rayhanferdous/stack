@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { languages } from "./LanguageList";
 
 type Props = {};
 
 const DropDown = (props: Props) => {
   const [lang, setLang] = useState("English (UK)");
+
   return (
     <span className="group relative ">
       <span className="inline-flex px-3 py-3.5 gap-9 bg-stk-slate-2 rounded-2xl ">
@@ -18,7 +19,7 @@ const DropDown = (props: Props) => {
           alt="stack-dropdown"
         />
       </span>
-      <span className="rounded-xl shadow-sm inset-x-0 absolute bg-stk-slate-2 stk-slate-2 hidden group-hover:block">
+      <span className="rounded-xl shadow-sm inset-x-0 absolute bg-stk-slate-2 stk-slate-2 hidden group-hover:!block">
         {languages.map((language, index) => (
           <span
             key={index}
