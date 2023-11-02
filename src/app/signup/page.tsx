@@ -84,13 +84,13 @@ export default function Home({ email }: Props) {
           </div>
           <div className="flex flex-col gap-4">
             <InputField
-              image="at-sign.svg"
+              image="smile.svg"
               type="text"
               name="your_name"
               handleBlur={form.handleBlurEvent}
               handleChange={form.handleChangeEvent}
               placeholder="Your Name"
-              value={fields.required}
+              value={fields.your_name}
             />
             {errors.required && (
               <label className="error">
@@ -129,13 +129,13 @@ export default function Home({ email }: Props) {
             </span>
           </label>
 
-          <SubmitBtn name="Sign In" />
+          <SubmitBtn name="Sign Up" />
         </form>
         <div className="text-center">
           <span className="text-stk-gray-2 text-base font-medium">
-            Don’t have an account yet?{" "}
+            Already have an account?{" "}
           </span>
-          <span className="text-stk-blue-3 text-base font-medium">Sign Up</span>
+          <span className="text-stk-blue-3 text-base font-medium">Sign In</span>
         </div>
       </div>
     </main>
