@@ -39,7 +39,7 @@ export default function Home({ email }: Props) {
   }, []);
 
   return (
-    <main className="flex items-center justify-center">
+    <main className="flex items-center justify-center max-sm:px-5">
       <div className="inline-flex h-full flex-col gap-7 pb-20">
         <div className="inline-flex items-center flex-col gap-2">
           <h2 className="text-stk-gray text-[26px] font-bold">
@@ -49,7 +49,7 @@ export default function Home({ email }: Props) {
             Create an account to continue!
           </p>
         </div>
-        <div className="inline-flex gap-7 items-center">
+        <div className="inline-flex gap-7 items-center max-[521px]:flex-col">
           <IconBtn title="Sign Up with Google" icon="google.svg" />
           <IconBtn title="Sign Up with Apple ID" icon="apple.svg" />
         </div>
