@@ -37,7 +37,7 @@ export default function RootLayout({
             </div>
           </div>
         </aside>
-        <section className="w-full h-full flex flex-col gap-12 p-4">
+        <section className="w-full h-full flex flex-col gap-12 px-10 py-6">
           <DetailHeader />
           {children}
         </section>
